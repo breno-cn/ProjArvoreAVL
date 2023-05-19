@@ -279,9 +279,21 @@ void removeTodos_ArvAVL(ArvAVL *raiz, int v) {
         return;
     }
 
-    int menor = procuraMenor(*raiz)->info;
-    while (menor < v) {
+    int menor;
+    do {
         remove_ArvAVL(raiz, menor);
         menor = procuraMenor(*raiz)->info;
+    } while (menor < v);
+}
+
+int semelhante_ArvAVL(ArvAVL *r1, ArvAVL *r2) {
+    if (*r1 == NULL && *r2 == NULL) {
+        return 1;
     }
+
+    if ((*r1)->altura != (*r1)->altura) {
+        return 0;
+    }
+
+    return semelhante_ArvAVL(&(*r1)->esq, &(*r2)->esq) && semelhante_ArvAVL(&(*r1)->dir, &(*r2)->dir);
 }

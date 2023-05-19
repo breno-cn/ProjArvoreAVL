@@ -56,6 +56,8 @@ int main(){
     printf("--------------------------------------------------------\n");
     emOrdem_ArvAVL(avl);
 
+    printf("%d\n", semelhante_ArvAVL(avl, avl));
+
     libera_ArvAVL(avl);
 
 

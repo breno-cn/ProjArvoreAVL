@@ -22,3 +22,4 @@ void preOrdem_ArvAVL(ArvAVL *raiz);
 void emOrdem_ArvAVL(ArvAVL *raiz);
 void posOrdem_ArvAVL(ArvAVL *raiz);
 void removeTodos_ArvAVL(ArvAVL *raiz, int v);
+int semelhante_ArvAVL(ArvAVL *r1, ArvAVL *r2);
