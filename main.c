@@ -52,14 +52,19 @@ int main(){
     emOrdem_ArvAVL(avl);
     printf("\n\n");
 
-    removeTodos_ArvAVL(avl, 9);
-    printf("--------------------------------------------------------\n");
-    emOrdem_ArvAVL(avl);
+    insere_ArvAVL(avl, -1);
+    insere_ArvAVL(avl, 30);
+    insere_ArvAVL(avl, -5);
+    insere_ArvAVL(avl, 16);
+    insere_ArvAVL(avl, 20);
 
-    printf("%d\n", semelhante_ArvAVL(avl, avl));
+    if (consulta_ArvAVL(avl, 5) == 1) {
+        printf("O valor 5 esta na arvore\n");
+    } else {
+        printf("O valor 5 nao esta na arvore\n");
+    }
 
     libera_ArvAVL(avl);
-
 
     return 0;
 }
