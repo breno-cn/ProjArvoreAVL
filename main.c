@@ -64,6 +64,10 @@ int main(){
         printf("O valor 5 nao esta na arvore\n");
     }
 
+    removeTodos_ArvAVL(avl, 7);
+    printf("\n\n");
+    emOrdem_ArvAVL(avl);
+
     libera_ArvAVL(avl);
 
     return 0;
